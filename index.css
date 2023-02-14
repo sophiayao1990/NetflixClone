@@ -1,0 +1,83 @@
+/* font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif; 
+@1100 nav bar change
+@885 nav bar change*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #e5e5e5;
+}
+
+/* Body part */
+body {
+  background-color: #141414;
+  font-family: Helvetica, sans-serif;
+  color: #e5e5e5;
+}
+
+/* header part */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 2.5em;
+  background: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/header_gradient.png)
+    repeat-x;
+}
+/* nav left part */
+.fa-bars {
+  font-size: 1.5rem;
+  line-height: 2.1em;
+  padding-right: 0.5em;
+}
+.logo {
+  height: 3em;
+  vertical-align: bottom;
+}
+
+/* Menu */
+.menu {
+  position: relative;
+  top: 250px;
+  left: 0;
+}
+.avatar-img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+/* 
+.nav-left ul {
+  display: flex;
+}
+.nav-left ul li {
+  padding-left: 1em;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.avatar-img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+} */
+
+/* nav right part */
+.search {
+  background-color: #1b1b1b;
+  border: 1px solid #ccc;
+  padding: 0.25em 0.5em;
+  width: 12em;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 841px) and (max-width: 1280px) {
+}
