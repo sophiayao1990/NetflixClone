@@ -10,6 +10,8 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="index.js" defer></script>
+
     <link rel="stylesheet" href="index.css" />
 
     <title>Netflix Clone</title>
@@ -17,49 +19,52 @@
   <body>
     <header>
       <div class="nav-left">
-        <i class="fa-sharp fa-solid fa-bars"></i>
-        <!-- <div class="menu">
-          <div class="account">
-            <div class="avatar">
-              <img src="images/avatar.JPG" alt="" class="avatar-img" />
-              <h3>Sophia</h3>
-            </div>
-            <p>Switch Profiles</p>
-            <ul>
-              <li><a href="#">Account</a></li>
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Sign Out of Netflix</a></li>
-            </ul>
-          </div>
-          <ul class="movie-type">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">My List</a></li>
-            </ul>
-            <li><a href="#">Thrillers</a></li>
-            <li><a href="#">Kids & Family</a></li>
-            <li><a href="#">International ovies & TV</a></li>
-            <li><a href="#">Reality TV</a></li>
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Anime</a></li>
-            <li><a href="#">Comedies</a></li>
-            <li><a href="#">Fantasy</a></li>
-            <li><a href="#">Sci-Fi</a></li>
-            <li><a href="#">Horror</a></li>
-            <li><a href="#">Stand-Up Comedy</a></li>
-            <li><a href="#">Documentaries</a></li>
-            <li><a href="#">Music& Musicals</a></li>
-            <li><a href="#">Romance</a></li>
-            <li><a href="#">Dramas</a></li>
-            <li><a href="#">Canadian Movie & TV</a></li>
-            <li><a href="#">Netflix 2022 Oscars Collection</a></li>
-          </ul>
-        </div> -->
+        <i class="fa-sharp fa-solid fa-bars" id="hambuger-menu"></i>
         <a href="#"><img src="images/netflixLogo.png" alt="" class="logo" /></a>
       </div>
       <div class="nav-right">
         <input type="text" placeholder="Search" class="search" />
       </div>
     </header>
+
+    <main>
+      <div class="menu" id="menu">
+        <div class="account">
+          <div class="avatar">
+            <img src="images/avatar.JPG" alt="" class="avatar-img" />
+            <h3>Sophia</h3>
+          </div>
+          <p>Switch Profiles</p>
+          <ul>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Sign Out of Netflix</a></li>
+          </ul>
+        </div>
+        <ul class="movie-type">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My List</a></li>
+          </ul>
+          <li><a href="#">Thrillers</a></li>
+          <li><a href="#">Kids & Family</a></li>
+          <li><a href="#">International ovies & TV</a></li>
+          <li><a href="#">Reality TV</a></li>
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Anime</a></li>
+          <li><a href="#">Comedies</a></li>
+          <li><a href="#">Fantasy</a></li>
+          <li><a href="#">Sci-Fi</a></li>
+          <li><a href="#">Horror</a></li>
+          <li><a href="#">Stand-Up Comedy</a></li>
+          <li><a href="#">Documentaries</a></li>
+          <li><a href="#">Music& Musicals</a></li>
+          <li><a href="#">Romance</a></li>
+          <li><a href="#">Dramas</a></li>
+          <li><a href="#">Canadian Movie & TV</a></li>
+          <li><a href="#">Netflix 2022 Oscars Collection</a></li>
+        </ul>
+      </div>
+    </main>
   </body>
 </html>
