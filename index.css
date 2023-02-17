@@ -7,14 +7,13 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  color: #e5e5e5;
+  color: gray;
 }
 
 /* Body part */
 body {
   background-color: #141414;
   font-family: Helvetica, sans-serif;
-  color: #e5e5e5;
 }
 
 /* header part */
@@ -41,20 +40,24 @@ header {
 
 /* Menu */
 .menu {
-  display: none;
   width: 250px;
   height: calc(100vh - 50px);
   background-color: #000000;
-  position: relative;
-  top: 0;
+  position: absolute;
+  top: 50px;
   left: 0;
-  color: red;
   cursor: pointer;
   line-height: 2;
   overflow-y: scroll;
   font-size: 1rem;
   padding-left: 2.5em;
+  transform: translateX(-100%);
+  transition: all 0.15s ease;
 }
+.show-menu {
+  transform: translateX(0);
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -63,26 +66,6 @@ header {
   height: 35px;
   object-fit: cover;
 }
-/* 
-.nav-left ul {
-  display: flex;
-}
-.nav-left ul li {
-  padding-left: 1em;
-  font-size: 0.875rem;
-  cursor: pointer;
-}
-
-.avatar {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-}
-.avatar-img {
-  width: 25px;
-  height: 25px;
-  object-fit: cover;
-} */
 
 /* nav right part */
 .search {
@@ -91,6 +74,25 @@ header {
   padding: 0.25em 0.5em;
   width: 12em;
   font-size: 1rem;
+}
+
+/* main part */
+main {
+  padding: 0 2.5em;
+}
+.row h2 {
+  font-size: 1.2rem;
+  margin: 2em 0 0.5em 0;
+}
+.row-posters {
+  display: flex;
+  overflow-x: scroll;
+}
+.row-poster-div {
+  width: 50vw;
+  height: 200px;
+  background: no-repeat center;
+  background-size: cover;
 }
 
 @media screen and (min-width: 841px) and (max-width: 1280px) {
