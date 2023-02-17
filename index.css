@@ -78,22 +78,24 @@ header {
 
 /* main part */
 main {
-  padding: 0 2.5em;
+  padding: 2.5em;
 }
 .row h2 {
   font-size: 1.2rem;
-  margin: 2em 0 0.5em 0;
+  margin-bottom: 0.5em;
 }
 .row-posters {
   display: flex;
-  height: 200px;
   overflow-x: scroll;
 }
+.row-posters a {
+  width: 50%;
+  padding-bottom: 2.5em;
+}
 .row-poster-div {
-  width: 50vw;
-  height: 100%;
+  padding-top: 57%;
   background: no-repeat center;
-  background-size: contain;
+  background-size: cover;
 }
 
 /* search bar size change at 500px screen size */
