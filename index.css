@@ -32,6 +32,7 @@ header {
   font-size: 1.5rem;
   line-height: 2.1em;
   padding-right: 0.5em;
+  color: #fff;
 }
 .logo {
   height: 3em;
@@ -78,7 +79,7 @@ header {
 
 /* main part */
 main {
-  padding: 2.5em;
+  padding: 2.5em 0 2.5em 2.5em;
 }
 .row h2 {
   font-size: 1.2rem;
@@ -87,9 +88,10 @@ main {
 .row-posters {
   display: flex;
   overflow-x: scroll;
+  gap: 0 0.2em;
 }
 .row-posters a {
-  width: 50%;
+  min-width: 47%;
   padding-bottom: 2.5em;
 }
 .row-poster-div {
@@ -98,10 +100,45 @@ main {
   background-size: cover;
 }
 
+/* footer part */
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10em 2.5em 2.5em;
+}
+
 /* search bar size change at 500px screen size */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 501px) {
   .search {
     width: 12em;
+  }
+  .row-posters a {
+    min-width: 32%;
+  }
+}
+@media screen and (min-width: 801px) {
+  .row-posters a {
+    min-width: 24%;
+  }
+}
+@media screen and (min-width: 1101px) {
+  .row-posters a {
+    min-width: 19.5%;
+  }
+}
+@media screen and (min-width: 1401px) {
+  .row-posters a {
+    min-width: 16%;
+  }
+}
+@media screen and (min-width: 1701px) {
+  .row-posters a {
+    min-width: 14%;
+  }
+}
+@media screen and (min-width: 2001px) {
+  .row-posters a {
+    min-width: 12%;
   }
 }
 @media screen and (min-width: 841px) and (max-width: 1280px) {
