@@ -72,7 +72,7 @@ header {
   background-color: #1b1b1b;
   border: 1px solid #ccc;
   padding: 0.25em 0.5em;
-  width: 12em;
+  width: 7em;
   font-size: 1rem;
 }
 
@@ -86,14 +86,21 @@ main {
 }
 .row-posters {
   display: flex;
+  height: 200px;
   overflow-x: scroll;
 }
 .row-poster-div {
   width: 50vw;
-  height: 200px;
+  height: 100%;
   background: no-repeat center;
-  background-size: cover;
+  background-size: contain;
 }
 
+/* search bar size change at 500px screen size */
+@media screen and (min-width: 500px) {
+  .search {
+    width: 12em;
+  }
+}
 @media screen and (min-width: 841px) and (max-width: 1280px) {
 }
