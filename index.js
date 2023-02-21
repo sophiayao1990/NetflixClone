@@ -1,14 +1,15 @@
-// document.getElementById("hambuger-menu").addEventListener("click", () => {
-//   const menu = document.getElementById("menu");
-//   if (menu.style.display === "none") {
-//     menu.style.display = "block";
-//   } else {
-//     menu.style.display = "none";
-//   }
-// });
-
 document.getElementById("hambuger-menu").addEventListener("click", () => {
   document.getElementById("menu").classList.toggle("show-menu");
   document.getElementById("gray-out").classList.toggle("gray-out");
-  document.getElementsByTagName("header")[0].classList.toggle("dark");
+  if (window.scrollY == "0") {
+    document.getElementsByTagName("header")[0].classList.toggle("dark");
+  }
 });
+
+window.onscroll = function () {
+  if (window.scrollY != "0") {
+    document.getElementsByTagName("header")[0].classList.add("dark");
+  } else {
+    document.getElementsByTagName("header")[0].classList.remove("dark");
+  }
+};
