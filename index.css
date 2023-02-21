@@ -7,13 +7,14 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  color: #999999;
 }
 
 /* Body part */
 body {
   background-color: #141414;
   font-family: Helvetica, sans-serif;
+  min-width: 370px;
+  color: #fff;
 }
 
 /* header part */
@@ -36,13 +37,13 @@ header {
 
 /* nav left part */
 .fa-bars {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 2.1em;
   padding-right: 0.5em;
   color: #fff;
 }
 .logo {
-  height: 3em;
+  height: 2.7em;
   vertical-align: bottom;
 }
 .gray-out {
@@ -119,24 +120,24 @@ header {
 }
 
 /* main part */
-main {
-}
 .banner {
   background-image: url(https://occ-0-858-1722.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABTgtvrK9aGcMeo-eALoyIApO80MbVFy4dsRJJ8NWRcV1opSpM9K0vt-NpgQnNJcTBTBGRWHafatdktEi1DpNzv31D_UOeivWbt9z.webp?r=c88);
   background-size: cover;
   background-position: center;
-  height: 448px;
+  height: 55vw;
   position: relative;
-  top: -50px;
   z-index: -2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .banner-content {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  padding: 5rem 0 0 2.5em;
-  width: 40%;
+  gap: 0.3em;
+  padding-left: 2.5em;
+  width: 43%;
 }
 .banner-title img {
   width: 100%;
@@ -146,8 +147,8 @@ main {
   align-items: center;
 }
 .top-10 {
-  width: 30px;
-  height: 30px;
+  min-width: 1.4em;
+  min-height: 1.4em;
   background-color: red;
   border-radius: 3px;
   text-align: center;
@@ -155,38 +156,38 @@ main {
   font-weight: bold;
 }
 .top-10 p {
-  font-size: 0.55rem;
+  font-size: 0.5rem;
   color: #fff;
 }
 .top-10 .big-10 {
-  font-size: 0.75rem;
+  font-size: 0.6rem;
 }
 .rank h6 {
-  font-size: 1rem;
-  padding-left: 1.2em;
+  padding-left: 0.8em;
+  font-size: 0.7rem;
   font-weight: 400;
-  color: #fff;
-  letter-spacing: 1.2px;
+  white-space: nowrap;
 }
 .description {
-  font-size: 0.7rem;
-  color: #fff;
+  font-size: 0.6rem;
   padding-top: 1em;
 }
 .banner-buttons {
   display: flex;
-  height: 38px;
   width: 90%;
   gap: 10px;
+  padding-top: 0.5em;
 }
 .banner-buttons span {
-  font-size: 0.875rem;
+  font-size: 0.6rem;
+  white-space: nowrap;
 }
 .banner-button {
-  height: 100%;
+  padding: 0.3em 0.3em 0.4em;
   border-radius: 5px;
   border: none;
-  width: 50%;
+  max-width: 120px;
+  min-width: 50%;
 }
 .play-btn {
   background-color: #fff;
@@ -194,11 +195,14 @@ main {
 }
 .more-info-btn {
   background-color: rgba(109, 109, 110, 0.7);
+  color: #fff;
 }
 .banner-fade-bottom {
-  height: 10rem;
-  margin-top: -50px;
-  background: rgb(20, 20, 20);
+  position: absolute;
+  bottom: -3em;
+  width: 100%;
+  padding-top: 10em;
+  z-index: -1;
   background: linear-gradient(
     180deg,
     rgba(20, 20, 20, 0) 5%,
@@ -209,7 +213,7 @@ main {
   );
 }
 .first-row {
-  margin-top: -50px;
+  margin-top: 1em;
 }
 .row {
   padding: 0 0 0 2.5em;
@@ -267,15 +271,26 @@ footer p {
 }
 
 @media screen and (min-width: 501px) {
-  /* search bar size change */
+  html {
+    font-size: 20px;
+  }
+  .banner-button {
+    padding: 0.5em 0.3em 0.6em;
+  }
   .search {
-    width: 12em;
+    width: 10em;
   }
   .row-posters a {
     min-width: 32%;
   }
 }
 @media screen and (min-width: 801px) {
+  html {
+    font-size: 26px;
+  }
+  .banner-button {
+    padding: 0.6em 0.3em 0.7em;
+  }
   .row-posters a {
     min-width: 24%;
   }
@@ -283,8 +298,17 @@ footer p {
   .terms li {
     flex: 25%;
   }
+  .banner {
+    height: 45vw;
+  }
 }
 @media screen and (min-width: 1101px) {
+  html {
+    font-size: 30px;
+  }
+  .banner-button {
+    padding: 0.8em 0.3em 0.9em;
+  }
   .row-posters a {
     min-width: 19.5%;
   }
