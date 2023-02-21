@@ -10,4 +10,5 @@
 document.getElementById("hambuger-menu").addEventListener("click", () => {
   document.getElementById("menu").classList.toggle("show-menu");
   document.getElementById("gray-out").classList.toggle("gray-out");
+  document.getElementsByTagName("header")[0].classList.toggle("dark");
 });

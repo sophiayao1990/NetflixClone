@@ -7,7 +7,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  color: gray;
+  color: #999999;
 }
 
 /* Body part */
@@ -18,6 +18,10 @@ body {
 
 /* header part */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,6 +29,9 @@ header {
   padding: 0 2.5em;
   background: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/header_gradient.png)
     repeat-x;
+}
+.dark {
+  background-color: #141414;
 }
 
 /* nav left part */
@@ -113,7 +120,99 @@ header {
 
 /* main part */
 main {
-  padding: 2.5em 0 2.5em 2.5em;
+}
+.banner {
+  background-image: url(https://occ-0-858-1722.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABTgtvrK9aGcMeo-eALoyIApO80MbVFy4dsRJJ8NWRcV1opSpM9K0vt-NpgQnNJcTBTBGRWHafatdktEi1DpNzv31D_UOeivWbt9z.webp?r=c88);
+  background-size: cover;
+  background-position: center;
+  height: 448px;
+  position: relative;
+  top: -50px;
+  z-index: -2;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 5rem 0 0 2.5em;
+  width: 40%;
+}
+.banner-title img {
+  width: 100%;
+}
+.rank {
+  display: flex;
+  align-items: center;
+}
+.top-10 {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 3px;
+  text-align: center;
+  padding: 2px;
+  font-weight: bold;
+}
+.top-10 p {
+  font-size: 0.55rem;
+  color: #fff;
+}
+.top-10 .big-10 {
+  font-size: 0.75rem;
+}
+.rank h6 {
+  font-size: 1rem;
+  padding-left: 1.2em;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 1.2px;
+}
+.description {
+  font-size: 0.7rem;
+  color: #fff;
+  padding-top: 1em;
+}
+.banner-buttons {
+  display: flex;
+  height: 38px;
+  width: 90%;
+  gap: 10px;
+}
+.banner-buttons span {
+  font-size: 0.875rem;
+}
+.banner-button {
+  height: 100%;
+  border-radius: 5px;
+  border: none;
+  width: 50%;
+}
+.play-btn {
+  background-color: #fff;
+  color: #141414;
+}
+.more-info-btn {
+  background-color: rgba(109, 109, 110, 0.7);
+}
+.banner-fade-bottom {
+  height: 10rem;
+  margin-top: -50px;
+  background: rgb(20, 20, 20);
+  background: linear-gradient(
+    180deg,
+    rgba(20, 20, 20, 0) 5%,
+    rgba(20, 20, 20, 0.5872942927170868) 22%,
+    rgba(20, 20, 20, 0.836594012605042) 44%,
+    rgba(20, 20, 20, 1) 69%,
+    rgba(20, 20, 20, 0.9038209033613446) 86%
+  );
+}
+.first-row {
+  margin-top: -50px;
+}
+.row {
+  padding: 0 0 0 2.5em;
 }
 .row h2 {
   font-size: 1.2rem;
@@ -135,19 +234,40 @@ main {
 }
 
 /* footer part */
-footer ul {
-  display: flex;
-  justify-content: flex-start;
+footer {
+  max-width: 980px;
+  margin: 0 auto;
   padding: 0 2.5em;
-  gap: 0 2em;
+}
+.social-media {
+  display: flex;
+  margin-bottom: 0.46em;
+}
+.social-media li a i {
+  font-size: 1.5rem;
+  margin-right: 0.63em;
+  color: #fff;
+}
+.terms {
+  margin-bottom: 2em;
+  display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
-footer ul li a {
-  white-space: nowrap;
+.terms li {
+  flex: 50%;
+  margin-bottom: 1.1em;
+}
+.terms li a {
+  font-size: 0.81rem;
+}
+footer p {
+  font-size: 0.687rem;
+  margin-bottom: 1.36em;
 }
 
-/* search bar size change at 500px screen size */
 @media screen and (min-width: 501px) {
+  /* search bar size change */
   .search {
     width: 12em;
   }
@@ -158,6 +278,10 @@ footer ul li a {
 @media screen and (min-width: 801px) {
   .row-posters a {
     min-width: 24%;
+  }
+  /*column number changes for terms*/
+  .terms li {
+    flex: 25%;
   }
 }
 @media screen and (min-width: 1101px) {
