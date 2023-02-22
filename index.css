@@ -132,7 +132,7 @@ header {
   background-image: url(https://occ-0-858-1722.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABTgtvrK9aGcMeo-eALoyIApO80MbVFy4dsRJJ8NWRcV1opSpM9K0vt-NpgQnNJcTBTBGRWHafatdktEi1DpNzv31D_UOeivWbt9z.webp?r=c88);
   background-size: cover;
   background-position: center;
-  height: 55vw;
+  height: 60vw;
   position: relative;
   z-index: -2;
   display: flex;
@@ -143,9 +143,9 @@ header {
 .banner-content {
   display: flex;
   flex-direction: column;
-  gap: 0.3em;
+  gap: 0.2em;
   padding: 1em 0 0 2.5em;
-  width: 43%;
+  width: 48%;
 }
 .banner h1 {
   padding: 0;
@@ -161,10 +161,11 @@ header {
 .top-10 {
   min-width: 1.3em;
   min-height: 1.3em;
+  line-height: 0.8;
   background-color: red;
   border-radius: 3px;
   text-align: center;
-  padding: 2px;
+  padding-top: 3px;
   font-weight: bold;
 }
 .top-10 p {
@@ -183,7 +184,7 @@ header {
 }
 .description {
   color: #fff;
-  font-size: 0.5rem;
+  font-size: 0.45rem;
   padding-top: 1em;
 }
 .banner-buttons {
@@ -197,7 +198,7 @@ header {
   white-space: nowrap;
 }
 .banner-button {
-  padding: 0.3em 0.3em 0.4em;
+  padding: 0.25em 0.3em 0.3em;
   border-radius: 5px;
   border: none;
   max-width: 120px;
@@ -297,6 +298,9 @@ footer p {
 @media screen and (min-width: 501px) {
   html {
     font-size: 20px;
+  }
+  .banner {
+    height: 50vw;
   }
 
   .banner-button {
