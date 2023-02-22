@@ -70,7 +70,6 @@ header {
   background-color: #000000;
   position: fixed;
   top: 50px;
-  left: 0;
   cursor: pointer;
   line-height: 2;
   overflow-y: scroll;
@@ -86,20 +85,19 @@ header {
 }
 /* Nav: Menu : Account */
 .account {
-  margin: 0.7em 0;
+  margin: 1em 0;
   line-height: 1;
   border-bottom: 1px solid #333;
-  padding-left: 2.5em;
 }
 .avatar {
   display: flex;
   align-items: center;
-  gap: 0 0.625em;
-  margin-bottom: 0.7em;
+  gap: 0 0.63em;
 }
 .avatar-info h3 {
   color: #fff;
 }
+.avatar,
 .account ul li {
   margin-bottom: 0.7em;
 }
@@ -112,6 +110,7 @@ header {
   object-fit: cover;
 }
 /* Nav: Menu : movie-type */
+.account,
 .movie-type li {
   padding-left: 2.5em;
 }
@@ -156,8 +155,8 @@ header {
   align-items: center;
 }
 .top-10 {
-  min-width: 1.4em;
-  min-height: 1.4em;
+  min-width: 1.3em;
+  min-height: 1.3em;
   background-color: red;
   border-radius: 3px;
   text-align: center;
