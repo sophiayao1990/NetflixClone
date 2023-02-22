@@ -144,8 +144,12 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.3em;
-  padding-left: 2.5em;
+  padding: 1em 0 0 2.5em;
   width: 43%;
+}
+.banner h1 {
+  padding: 0;
+  margin: 0;
 }
 .banner-title img {
   width: 100%;
@@ -179,7 +183,7 @@ header {
 }
 .description {
   color: #fff;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   padding-top: 1em;
 }
 .banner-buttons {
